@@ -1,14 +1,12 @@
 (function( $, window, document,undefined ){
     $.fn.extend({
-		addSearchComponent : function(Options_temp) {
+		addSearchComponent : function(options_temp) {
 			var Options = $.extend({},{
-				defaultOffset: {
-                    headerData: [
-                        ["goole","www.google.com"],
-                        ["baidu","www.baidu.com"]
-                    ]  
-                },
-			}, Options_temp);
+                headerData: [
+                    ["goole","www.google.com"],
+                    ["baidu","www.baidu.com"]
+                ]  
+			}, options_temp);
             var headerData = Options.headerData;
             
             $(this).empty();
