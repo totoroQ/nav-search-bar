@@ -1,12 +1,12 @@
 (function( $, window, document,undefined ){
     $.fn.extend({
-		addSearchComponent : function(options_temp) {
-			var Options = $.extend({},{
-				headerData: [
-					["goole","www.google.com"],
-					["baidu","www.baidu.com"]
-				]  
-	                }, options_temp);
+	addSearchComponent : function(options_temp) {
+	    var Options = $.extend({},{
+			headerData: [
+				["goole","www.google.com"],
+				["baidu","www.baidu.com"]
+			]  
+	    }, options_temp);
             var headerData = Options.headerData;
             
             $(this).empty();
@@ -50,6 +50,6 @@
             })
 
 	    return this;		
-	    }
-     }); 
+	}
+    }); 
 })( jQuery, window, document );
