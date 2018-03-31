@@ -2,11 +2,11 @@
     $.fn.extend({
 		addSearchComponent : function(options_temp) {
 			var Options = $.extend({},{
-                headerData: [
-                    ["goole","www.google.com"],
-                    ["baidu","www.baidu.com"]
-                ]  
-			}, options_temp);
+				headerData: [
+					["goole","www.google.com"],
+					["baidu","www.baidu.com"]
+				]  
+	                }, options_temp);
             var headerData = Options.headerData;
             
             $(this).empty();
@@ -15,7 +15,7 @@
                 `<ul class="header" style="margin-top:6px;margin-bottom:-5px;margin-right:15px;">
                     <input type="search" id = "headerSearch" type="text" placeholder="Search Page" data-provide="typeahead" style="width:180px;height:25px;background:#C0C0C0;border-radius:5px;border:none;padding-left:5px;padding-right:30px;"/>
                     <button id="headerBtnSearch" class="btn btn-primary" style="margin-left:-40px;background:transparent;color:#606060;border:none;">Go</button>
-                </ul>`;
+                 </ul>`;
             $(this).append(search_component);
 
             var headerDataArr1 = new Array();
@@ -49,7 +49,7 @@
                     }
             })
 
-			return this;		
-		}
-	}); 
+	    return this;		
+	    }
+     }); 
 })( jQuery, window, document );
